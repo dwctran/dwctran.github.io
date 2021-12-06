@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dwctran's portfolio</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+</head>
+
+<body class="bg-body text-white font-inter pb-12">
+
+    <header class="py-6 w-full" id="home"">
+        <div class="container fixed z-10 mt-0 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-36 w-full top-0 py-3.5 bg-body">
+            <div>
+                <a href="#home"><img src="/imgs/logo.svg" alt=""></a>
+            </div>
+            <div class="hidden lg:flex space-x-12 items-center">
+                <a href="#about" class="text-white focus:text-selected-text hover:underline hover:text-selected-text hover:font-bold">About Me</a>
+                <a href="#project" class="text-white focus:text-selected-text hover:underline hover:text-selected-text hover:font-bold">My Projects</a>
+                <a href="#certificate" class="text-white focus:text-selected-text hover:underline hover:text-selected-text hover:font-bold">Achievements</a>
+                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold rounded-md transform transition-all hover:scale-110">Contact me</button></a>
+            </div>
+            <div class="lg:hidden">
+                <svg width="39" height="22" viewBox="0 0 39 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="13" width="26" height="4" fill="white" />
+                    <rect y="9" width="26" height="4" fill="white" />
+                    <rect x="12" y="18" width="26" height="4" fill="white" />
+                </svg>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container flex justify-around items-center mx-auto px-8 md:px-14 lg:px-36 w-full">
+        <div class="flex flex-wrap md:flex-nowrap" style="z-index:5">
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block top-64">
+                <div class="absolute transform -translate-x-2/3 space-y-6 mt-37">
+                    <a href="#home"
+                        class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    </a>
+                    <a href="#about" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">About</span>
+                    </a>
+                    <a href="#project" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
+                    </a>
+                    <a href="#certificate" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Achievement</span>
+                    </a>
+                    <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="flex content-center text-left flex-wrap md:flex-nowrap mt-28">
+                <div
+                    class="flex flex-wrap flex-col lg:ml-20 justify-center md:justify-start max-w-xl mt-6 mx-auto md:my-12 h-auto">
+                    <img src="/imgs/hero.jpg" alt=""
+                        class="w-1/2 md:w-3/4 mt-12 -mt-6 md:mt-0 rounded-full border-4 border-white mx-auto">
+                </div>
+                <div
+                    class="flex flex-wrap flex-col flex-start mx-auto self-center lg:ml-20 md:justify-center items-left md:justify-start max-w-xl mt-0 md:my-36 h-auto ">
+                    <h3 class="font-bold text-xl mb-2">Hi, I'm</h3>
+                    <h1 class="font-extrabold text-4xl font-raleway mb-2 tracking-wider">TRAN DINH DUC</h1>
+                    <p class="w-auto text-xl mb-8">I'm a sophomore with huge interest in Data, actively searching for
+                        Data Analyst intern position.</p>
+                    <a href="#project"><button
+                            class="px-6 py-2 bg-theme font-bold space-x-3 flex items-center rounded-md transform transition-all hover:scale-110"
+                            style="width: fit-content;">
+                            <div>
+                                <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6473 5.99874C13.6473 7.58989 12.2356 8.87977 10.4943 8.87977C8.75298 8.87977 7.34136 7.58989 7.34136 5.99874C7.34136 4.40757 8.75298 3.11771 10.4943 3.11771C12.2356 3.11769 13.6473 4.40759 13.6473 5.99874ZM10.5 0C8.69706 0.0076277 6.82826 0.42625 5.05918 1.22773C3.74567 1.84732 2.46557 2.72149 1.35439 3.80046C0.80864 4.35124 0.112543 5.14876 0 5.99968C0.0133 6.73676 0.842275 7.64654 1.35439 8.19891C2.3964 9.2355 3.64315 10.0853 5.05918 10.7723C6.70892 11.5359 8.53496 11.9755 10.5 12C12.3047 11.9923 14.173 11.5688 15.9402 10.7723C17.2537 10.1527 18.5344 9.27788 19.6456 8.19891C20.1913 7.64813 20.8874 6.85059 21 5.99968C20.9867 5.26259 20.1577 4.35278 19.6456 3.80043C18.6036 2.76383 17.3562 1.91472 15.9402 1.22769C14.2913 0.464655 12.4607 0.0280239 10.5 0ZM10.4987 1.48962C13.2308 1.48962 15.4455 3.50911 15.4455 6.00033C15.4455 8.49153 13.2308 10.511 10.4987 10.511C7.76659 10.511 5.55186 8.49151 5.55186 6.00033C5.55186 3.50911 7.76659 1.48962 10.4987 1.48962Z"
+                                        fill="#F8F8F8" />
+                                </svg>
+                            </div>
+                            <span>My Projects</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex mt-16 justify-between items-center mx-auto px-8 md:px-14 lg:px-36 w-full">
+        <section class="w-full">
+            <h2 id='about' class='secondary-title'>About Me.</h2>
+            <!-- <div class="flex flex-wrap flex-row lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-12 h-auto">
+                <img src="/imgs/hero.jpg" alt="" class="w-1/2 md:w-3/4 mt-12 -mt-6 md:mt-0 rounded-full border-4 border-white ">
+            </div> -->
+            <div class="grid grid-cols-3 mt-6 gap-x-0 items-center">
+                <img src="/imgs/image.jpg" alt="" class="w-80 h-80 mt-12 -mt-6 md:mt-0 rounded-full">
+                <div class="col-span-2">
+                    <h3 class="font-bold text-xl mb-2">Bio</h3>
+                    <div class="grid grid-cols-3 gap-y-1.5 w-4/5">
+                        <p>2002</p>
+                        <p class="col-span-2">Born in Vinh, Vietnam.</p>
+                        <p>2020</p>
+                        <p class="col-span-2">High School Graduation.</p>
+                        <p>2021 - present</p>
+                        <p>Foreign Trade University
+                            Bachelor’s Degree in Economics.</p>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 mt-6">I Love </h3>
+                    <p>Music, Poker, Photography, Machine Learning, e-Sports,<br>
+                        Soccer, Books.</p>
+                    <button class="px-6 py-2 bg-theme font-bold space-x-3 flex items-center mt-6 rounded-md transform transition-all hover:scale-110"
+                        style="width: fit-content;">
+                        <div>
+                            <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.6473 5.99874C13.6473 7.58989 12.2356 8.87977 10.4943 8.87977C8.75298 8.87977 7.34136 7.58989 7.34136 5.99874C7.34136 4.40757 8.75298 3.11771 10.4943 3.11771C12.2356 3.11769 13.6473 4.40759 13.6473 5.99874ZM10.5 0C8.69706 0.0076277 6.82826 0.42625 5.05918 1.22773C3.74567 1.84732 2.46557 2.72149 1.35439 3.80046C0.80864 4.35124 0.112543 5.14876 0 5.99968C0.0133 6.73676 0.842275 7.64654 1.35439 8.19891C2.3964 9.2355 3.64315 10.0853 5.05918 10.7723C6.70892 11.5359 8.53496 11.9755 10.5 12C12.3047 11.9923 14.173 11.5688 15.9402 10.7723C17.2537 10.1527 18.5344 9.27788 19.6456 8.19891C20.1913 7.64813 20.8874 6.85059 21 5.99968C20.9867 5.26259 20.1577 4.35278 19.6456 3.80043C18.6036 2.76383 17.3562 1.91472 15.9402 1.22769C14.2913 0.464655 12.4607 0.0280239 10.5 0ZM10.4987 1.48962C13.2308 1.48962 15.4455 3.50911 15.4455 6.00033C15.4455 8.49153 13.2308 10.511 10.4987 10.511C7.76659 10.511 5.55186 8.49151 5.55186 6.00033C5.55186 3.50911 7.76659 1.48962 10.4987 1.48962Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </div>
+                        <span>My Resume</span>
+                    </button>
+
+                </div>
+                <!-- <img src="/imgs/about-img.png" alt="" style="position: absolute;" class="right-10"> -->
+            </div>
+        </section>
+        <img src="/imgs/about-img2.png" alt="" style="position: absolute; top: 100%" class="right-10">
+    </div>
+
+    <div class="container flex mt-16 justify-between items-center mx-auto px-8 md:px-14 lg:px-36 w-full">
+        <section class="w-full">
+            <h2 id='project' class='secondary-title'>My Projects.</h2>
+            <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt eget diam
+                scelerisque diam tempor sapien vulputate aliquet. Elit platea morbi enim, nisl aenean volutpat dignissim
+                tempus.</p>
+            <div class="my-slider flex justify-center">
+                <div>
+                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                        <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
+                        <div class="mx-4 pt-4 flex justify-between">
+                            <h3 class="font-bold">Project Name</h3>
+                            <a href="#"><img src="/imgs/link.png" alt=""></a>
+                        </div>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Ipsum nunc scelerisque mattis ut est, vitae, vitae in fringilla. Aliquet
+                            pellentesque nulla ut lobortis adipiscing.</p>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Skills: Python, SQL, Power BI</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                        <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
+                        <div class="mx-4 pt-4 flex justify-between">
+                            <h3 class="font-bold">Project Name</h3>
+                            <a href="#"><img src="/imgs/link.png" alt=""></a>
+                        </div>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Ipsum nunc scelerisque mattis ut est, vitae, vitae in fringilla. Aliquet
+                            pellentesque nulla ut lobortis adipiscing.</p>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Skills: Python, SQL, Power BI</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                        <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
+                        <div class="mx-4 pt-4 flex justify-between">
+                            <h3 class="font-bold">Project Name</h3>
+                            <a href="#"><img src="/imgs/link.png" alt=""></a>
+                        </div>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Ipsum nunc scelerisque mattis ut est, vitae, vitae in fringilla. Aliquet
+                            pellentesque nulla ut lobortis adipiscing.</p>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Skills: Python, SQL, Power BI</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                        <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
+                        <div class="mx-4 pt-4 flex justify-between">
+                            <h3 class="font-bold">Project Name</h3>
+                            <a href="#"><img src="/imgs/link.png" alt=""></a>
+                        </div>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Ipsum nunc scelerisque mattis ut est, vitae, vitae in fringilla. Aliquet
+                            pellentesque nulla ut lobortis adipiscing.</p>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Skills: Python, SQL, Power BI</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                        <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
+                        <div class="mx-4 pt-4 flex justify-between">
+                            <h3 class="font-bold">Project Name</h3>
+                            <a href="#"><img src="/imgs/link.png" alt=""></a>
+                        </div>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Ipsum nunc scelerisque mattis ut est, vitae, vitae in fringilla. Aliquet
+                            pellentesque nulla ut lobortis adipiscing.</p>
+                        <p class="mx-4 pt-4 text-xs font-light text-gray-100">Skills: Python, SQL, Power BI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container flex mt-16 justify-between items-center mx-auto px-8 md:px-14 lg:px-36 w-full">
+        <section class='w-full'>
+            <h2 id='certificate' class='secondary-title'>Certificates and Achievements.</h2>
+            <div class="grid grid-cols-2 mt-6 gap-x-6 gap-y-6 items-center ">
+                <a href="">
+                    <div class="group bg-body grid grid-cols-2 rounded-md border-white border-2 p-6  items-center transform transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-custom">
+                        <img src="/imgs/coursera.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-xl ">Google Data Analytics</h3>
+                            <p class="font-light text-xs ">December 2, 2021</p>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="group bg-body grid grid-cols-2 rounded-md border-white border-2 p-6  items-center transform transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-custom">
+                        <img src="/imgs/coursera.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-xl">Learn SQL Basics for
+                                Data Science</h3>
+                            <p class="font-light text-xs">December 2, 2021</p>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="group bg-body grid grid-cols-2 rounded-md border-white border-2 p-6  items-center transform transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-custom">
+                        <img src="/imgs/forage.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-xl">Quantum Virtual
+                                Data Analytics Program</h3>
+                            <p class="font-light text-xs">December 2, 2021</p>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="group bg-body grid grid-cols-2 rounded-md border-white border-2 p-6  items-center transform transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-custom">
+                        <img src="/imgs/forage.png" alt="">
+                        <div>
+                            <h3 class="font-bold text-xl">KPMG Virtual
+                                Data Analytics Program</h3>
+                            <p class="font-light text-xs">December 2, 2021</p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="container flex mt-16 justify-between items-center mx-auto px-8 md:px-14 lg:px-36 w-full">
+        <section class="w-full">
+            <h2 id='contact' class='secondary-title'>Contact Me.</h2>
+            <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt eget diam
+                scelerisque diam tempor sapien vulputate aliquet. Elit platea morbi enim, nisl aenean volutpat dignissim
+                tempus.</p>
+            <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-12">
+                <div>
+                    <form action="https://formsubmit.co/dinhductran189@gmail.com" method="POST">
+                        <div class="space-y-12">
+                            <div>
+                                <label for="" class="text-white block mb-6 text-lg font-semibold">Name</label>
+                                <input type="text" name="" id=""
+                                    class="w-full  bg-input px-4 py-4 rounded-sm focus:outline-none focus:ring-2 focus:ring-theme shadow-md" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="" class="text-white block mb-6 text-lg font-semibold">Email</label>
+                                <input type="text" name="" id=""
+                                class="w-full  bg-input px-4 py-4 rounded-sm focus:outline-none focus:ring-2 focus:ring-theme shadow-md" required placeholder="Your Email">
+                            </div>
+                            <div>
+                                <label for="" class="text-white block mb-6 text-lg font-semibold">Message</label>
+                                <textarea type="email" name="" id=""
+                                class="w-full  bg-input px-4 py-4 rounded-sm focus:outline-none focus:ring-2 focus:ring-theme shadow-md" rows=10
+                                    style="resize:none"></textarea>
+                            </div>
+                            <button type = "submit" class="px-6 py-2 bg-theme font-bold space-x-3 flex items-center mt-12 rounded-md transform transition-all hover:scale-110"
+                                style="width: fit-content;">
+                                <div>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.6749 0.195068C19.5425 0.0926574 19.3816 0.0274103 19.2109 0.00693036C19.0403 -0.0135496 18.8669 0.0115812 18.711 0.079394L0 8.26203V9.84537L7.85899 12.7742L12.9 20H14.5998L19.9704 1.05786C20.014 0.902737 20.0093 0.739276 19.957 0.586523C19.9047 0.433769 19.8069 0.298013 19.6749 0.195068ZM13.5503 18.4898L9.21733 12.2788L15.885 5.4747L14.8301 4.57726L8.11016 11.4344L1.6304 9.01955L18.3024 1.72837L13.5503 18.4898Z"
+                                            fill="#F8F8F8" />
+                                    </svg>
+        
+                                </div>
+                                <span>Send It</span>
+                            </button>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+                <div class="mt-12">
+                    <p class="text-secondary font-bold">+84-86-221-5572</p>
+                    <a href="mailto:dinhductran189@gmail.com"><p class="text-secondary font-bold">dinhductran189@gmail.com</p></a>
+
+                    <div class="flex mt-12 space-x-16">
+                        <!-- Facebook -->
+                        <a href="">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 20.1117C0 30.055 7.22167 38.3233 16.6667 40V25.555H11.6667V20H16.6667V15.555C16.6667 10.555 19.8883 7.77833 24.445 7.77833C25.8883 7.77833 27.445 8 28.8883 8.22167V13.3333H26.3333C23.8883 13.3333 23.3333 14.555 23.3333 16.1117V20H28.6667L27.7783 25.555H23.3333V40C32.7783 38.3233 40 30.0567 40 20.1117C40 9.05 31 0 20 0C9 0 0 9.05 0 20.1117Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.66666 4.73009C1.66666 3.91764 1.9894 3.13847 2.56389 2.56398C3.13837 1.9895 3.91754 1.66675 4.72999 1.66675H35.2667C35.6693 1.66609 36.0681 1.74486 36.4402 1.89853C36.8124 2.0522 37.1506 2.27777 37.4354 2.56231C37.7203 2.84686 37.9462 3.18479 38.1003 3.55677C38.2543 3.92875 38.3335 4.32746 38.3333 4.73009V35.2668C38.3338 35.6695 38.2548 36.0683 38.1009 36.4404C37.9471 36.8126 37.7214 37.1508 37.4367 37.4356C37.152 37.7204 36.814 37.9463 36.4419 38.1004C36.0698 38.2545 35.671 38.3336 35.2683 38.3334H4.72999C4.32757 38.3334 3.92909 38.2541 3.55732 38.1001C3.18555 37.946 2.84778 37.7202 2.5633 37.4356C2.27882 37.151 2.05321 36.8131 1.89936 36.4412C1.74551 36.0694 1.66644 35.6708 1.66666 35.2684V4.73009ZM16.18 15.6468H21.145V18.1401C21.8617 16.7068 23.695 15.4168 26.45 15.4168C31.7317 15.4168 32.9833 18.2718 32.9833 23.5101V33.2134H27.6383V24.7034C27.6383 21.7201 26.9217 20.0368 25.1017 20.0368C22.5767 20.0368 21.5267 21.8518 21.5267 24.7034V33.2134H16.18V15.6468ZM7.01332 32.9851H12.36V15.4168H7.01332V32.9834V32.9851ZM13.125 9.68675C13.1351 10.1445 13.0536 10.5997 12.8854 11.0256C12.7172 11.4515 12.4656 11.8395 12.1454 12.1668C11.8252 12.4941 11.4428 12.7542 11.0207 12.9318C10.5987 13.1093 10.1454 13.2008 9.68749 13.2008C9.22959 13.2008 8.7763 13.1093 8.35423 12.9318C7.93216 12.7542 7.5498 12.4941 7.2296 12.1668C6.9094 11.8395 6.65781 11.4515 6.48959 11.0256C6.32137 10.5997 6.23991 10.1445 6.24999 9.68675C6.26978 8.78818 6.64063 7.93307 7.28313 7.30456C7.92563 6.67605 8.7887 6.32411 9.68749 6.32411C10.5863 6.32411 11.4493 6.67605 12.0918 7.30456C12.7343 7.93307 13.1052 8.78818 13.125 9.68675Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.2516 13.365L26.635 2.7483C24.8752 0.988591 22.4886 0 20 0C17.5114 0 15.1247 0.988591 13.365 2.7483L2.7483 13.365C0.988591 15.1247 0 17.5114 0 20C0 22.4886 0.988591 24.8752 2.7483 26.635L13.365 37.2516C15.1247 39.0113 17.5114 39.9999 20 39.9999C22.4886 39.9999 24.8752 39.0113 26.635 37.2516L37.2516 26.635C39.0113 24.8752 39.9999 22.4886 39.9999 20C39.9999 17.5114 39.0113 15.1247 37.2516 13.365V13.365ZM20 26.5883C19.1348 26.5883 18.2781 26.4179 17.4787 26.0868C16.6794 25.7557 15.9531 25.2704 15.3413 24.6586C14.7295 24.0468 14.2442 23.3205 13.9131 22.5212C13.582 21.7219 13.4116 20.8652 13.4116 20C13.4116 19.1348 13.582 18.2781 13.9131 17.4787C14.2442 16.6794 14.7295 15.9531 15.3413 15.3413C15.9531 14.7295 16.6794 14.2442 17.4787 13.9131C18.2781 13.582 19.1348 13.4116 20 13.4116C21.7473 13.4116 23.4231 14.1058 24.6586 15.3413C25.8942 16.5769 26.5883 18.2526 26.5883 20C26.5883 21.7473 25.8942 23.4231 24.6586 24.6586C23.4231 25.8942 21.7473 26.5883 20 26.5883Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="border-t-2 border-white w-full h-auto mt-16 text-center border-secondary">
+            <p class="mt-12 text-secondary">2022. Tran Dinh Duc.</p>
+        </div>
+    </footer>
+        <script src="/main.js"></script>
+</body>
+
+
+</html>
