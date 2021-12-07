@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dwctran's portfolio</title>
+    <title>dwctran.</title>
     <link rel="stylesheet" href="tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <link rel="icon" href="/imgs/favicon.svg">
 
 </head>
 
@@ -25,11 +26,12 @@
             <div>
                 <a href="#home"><img src="/imgs/logo.svg" alt=""></a>
             </div>
-            <div class="hidden lg:flex space-x-12 items-center">
-                <a href="#about" class="text-white focus:text-selected-text hover:underline hover:text-selected-text hover:font-bold">About Me</a>
-                <a href="#project" class="text-white focus:text-selected-text hover:underline hover:text-selected-text hover:font-bold">My Projects</a>
-                <a href="#certificate" class="text-white focus:text-selected-text hover:underline hover:text-selected-text hover:font-bold">Achievements</a>
-                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold rounded-md transform transition-all hover:scale-110">Contact me</button></a>
+            
+            <div class="hidden lg:flex space-x-6 items-center links">
+                <a data-active = "about" href="#about" class="text-white hover:bg-card hover:rounded-lg px-4 py-2 transform transition-all focus:translate-y-2 ">About Me</a>
+                <a data-active = "project" href="#project" class="text-white hover:bg-card hover:rounded-lg px-4 py-2 transform transition-all focus:translate-y-2">My Projects</a>
+                <a data-active = "certificate" href="#certificate" class="text-white hover:bg-card hover:rounded-lg px-4 py-2 transform transition-all focus:translate-y-2">Achievements</a>
+                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold rounded-md transform transition-all focus:translate-y-2">Contact me</button></a>
             </div>
             <div class="lg:hidden">
                 <svg width="39" height="22" viewBox="0 0 39 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +66,7 @@
                     </a>
                 </div>
             </nav>
-            <div class="flex content-center text-left flex-wrap md:flex-nowrap mt-28">
+            <div class="flex content-center text-left flex-wrap md:flex-nowrap mt-32">
                 <div
                     class="flex flex-wrap flex-col lg:ml-20 justify-center md:justify-start max-w-xl mt-6 mx-auto md:my-12 h-auto">
                     <img src="/imgs/hero.jpg" alt=""
@@ -72,11 +74,11 @@
                 </div>
                 <div
                     class="flex flex-wrap flex-col flex-start mx-auto self-center lg:ml-20 md:justify-center items-left md:justify-start max-w-xl mt-0 md:my-36 h-auto ">
-                    <h3 class="font-bold text-xl mb-2">Hi, I'm</h3>
-                    <h1 class="font-extrabold text-4xl font-raleway mb-2 tracking-wider">TRAN DINH DUC</h1>
-                    <p class="w-auto text-xl mb-8">I'm a sophomore with huge interest in Data, actively searching for
-                        Data Analyst intern position.</p>
-                    <a href="#project"><button
+                    <h3 class="font-yesteryear text-3xl mb-2">Hi, I'm</h3>
+                    <h1 class="font-extrabold text-4xl font-dela mb-2 tracking-widest">TRAN DINH DUC</h1>
+                    <p class="w-auto text-xl mb-8">I'm a university sophomore with huge interest in Data, actively searching for
+                        <span class="bg-theme italic px-1">Data Analyst</span> intern position.</p>
+                    <a href="#project" style="width: fit-content;"><button
                             class="px-6 py-2 bg-theme font-bold space-x-3 flex items-center rounded-md transform transition-all hover:scale-110"
                             style="width: fit-content;">
                             <div>
@@ -145,7 +147,7 @@
                 tempus.</p>
             <div class="my-slider flex justify-center">
                 <div>
-                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                    <div class="select-none bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
                         <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
                         <div class="mx-4 pt-4 flex justify-between">
                             <h3 class="font-bold">Project Name</h3>
@@ -158,7 +160,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                    <div class="select-none bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
                         <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
                         <div class="mx-4 pt-4 flex justify-between">
                             <h3 class="font-bold">Project Name</h3>
@@ -171,7 +173,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                    <div class="select-none bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
                         <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
                         <div class="mx-4 pt-4 flex justify-between">
                             <h3 class="font-bold">Project Name</h3>
@@ -184,7 +186,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                    <div class="select-none bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
                         <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
                         <div class="mx-4 pt-4 flex justify-between">
                             <h3 class="font-bold">Project Name</h3>
@@ -197,7 +199,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
+                    <div class="select-none bg-card rounded-lg py-4 transform transition-all border-2 border-transparent hover:border-white hover:bg-hover-card hover:scale-95" style="width: 326px; height: auto">
                         <img src="/imgs/project.png" alt="" class="rounded-lg mx-auto">
                         <div class="mx-4 pt-4 flex justify-between">
                             <h3 class="font-bold">Project Name</h3>

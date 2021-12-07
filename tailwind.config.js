@@ -13,11 +13,13 @@ module.exports = {
         'input-border': '#565666',
         'input': '#2A2A35',
         'card': '#252630',
-        'hover-card': '#14141A'
+        'hover-card': '#14141A',
       },
       fontFamily: {
         'inter': ["'Inter'", 'sans-serif'],
-        'raleway': ["'Raleway'", 'sans-serif']
+        'raleway': ["'Raleway'", 'sans-serif'],
+        'dela': ["'Dela Gothic One'", 'cursive'],
+        'yesteryear': ["'Yesteryear'", 'cursive'],
       },
       boxShadow: {
         'custom': '8px 8px 0 0 rgba(40,216,204,1)',
@@ -33,7 +35,11 @@ module.exports = {
       transform: ['hover', 'focus'],
       textColor: ['active', 'group-focus'],
       dropShadow: ['hover', 'focus'],
-      fontWeight: ['hover', 'focus', 'active']
+      fontWeight: ['hover', 'focus', 'active'],
+      textColor: ['visited'],
+      backgroundColor: ['active', 'hover'],
+      borderRadius: ['hover', 'focus'],
+      boxShadow: ['hover', 'focus'],
     },
   },
 }
